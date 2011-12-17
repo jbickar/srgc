@@ -1,0 +1,135 @@
+--- srgc.css	2010-10-22 15:22:58.000000000 -0700
++++ srgc-locally-modified-1.2.css	2010-10-26 15:41:02.000000000 -0700
+@@ -152,6 +152,8 @@
+   .breadcrumb /* The path to the current page in the form of a list of links */
+   {
+     padding-bottom: 0; /* Undo system.css */
++    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
++    font-size: small; 
+   }
+ 
+   h1.title, /* The title of the page */
+@@ -255,15 +257,61 @@
+     display: none;
+   }
+ 
++  #primary /* Primary links */
++ 	{
++ 	width: auto;
++	height: auto;
++	color: #844D18;
++	padding: 8px;
++	float: left; */
++  }
++  
++  #primary ul {
++	margin: -11px 0 0 -9px;
++	padding: 0;
++  }
++
++  #primary li {
++	text-decoration: none;
++	text-align: left;
++	list-style-type: none;
++	list-style-image: none;
++	margin: -5px 0;
++  }
++
++  #primary li a{
++	background-color: #596237;
++	padding: 6px 6px 6px 10px;
++	width: 7.5em;
++	border-bottom: 1px solid #CCCC99;
++	display: block;
++  }
++  
++  #primary li a:link {
++	color: #CCCC99;
++  }
++
++  #primary li a:visited {
++	color: #CCCC99;
++	text-decoration: none;
++  }
++
++  #primary li a:hover {
++	color: #663300;
++	background-color: #B6C684;
++	text-decoration: none;
++  }
++
++  #primary li a:active {
++
++  }
++
+   #block-menu-primary-links /* Primary links */
+-  {
+-  	width: auto;
++ 	{
++ 	width: auto;
+ 	height: auto;
+ 	color: #844D18;
+ 	padding: 8px;
+-	text-align: center;
+-	line-height: normal;
+-/*	clear: both;
+ 	float: left; */
+   }
+   
+@@ -306,7 +354,6 @@
+   #block-menu-primary-links li a:active {
+ 
+   }
+-
+ /* Sub-menu items */
+ 
+   #block-menu-primary-links ul ul {
+@@ -350,6 +397,48 @@
+   #block-menu-primary-links ul ul li.last a:link {
+     border-bottom: 1px solid #FFFFCC;
+   }
++
++  #primary ul ul {
++	font-size: small;
++	font-family: Arial, Helvetica, sans-serif;
++	margin: 0;
++ }
++
++  #primary ul ul li {
++	list-style-type: none;
++	margin-left: 23px;
++  }
++
++  #primary ul ul li a {
++  
++  }
++
++  #primary ul ul li a:link {
++	background-color: #7A864B;
++	border-bottom: 2px solid #CCCC99;
++	color: #CCCC99;
++	text-decoration: none;
++  }
++
++  #primary ul ul li a:visited {
++	text-decoration: none;
++	color: #CCCC99;
++	background-color: #7A864B;
++  }
++
++  #primary ul ul li a:hover {
++	color: #663300;
++	background-color: #B6C684;
++	text-decoration: none;
++  }
++
++  #primary ul ul li a:active {
++
++  }
++
++  #primary ul ul li.last a:link {
++    border-bottom: 1px solid #FFFFCC;
++  }
+   
+   #secondary /* Secondary links */
+   {

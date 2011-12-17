@@ -1,0 +1,536 @@
+/*Id*/
+
+/*
+ * Advanced Forum Theming
+ * Based on Blue Lagoon Stacked style
+ */
+/* Since this style inherits from Blue Lagoon, only a few adjustments are
+   needed to account for having the Author Pane on top.
+*/
+
+/* Reset styles not needed with AP on top */
+.forum-post-wrapper {
+  background-color: transparent;
+}
+
+.forum-post-panel-main,
+.forum-post-links {
+  background-color: transparent;
+  border-left: none;
+}
+
+/* Add in our AP styling */
+.forum-post-panel-sub {
+  background-color: #FFFFCC;
+  border-bottom: 2px solid #B6C684;
+}
+
+.forum-post-panel-sub .author-offline, .forum-post-panel-sub .author-online {
+  display: none;
+}
+
+/* FORUM LIST ICONS *********************************************************/
+
+.forum-list-icon-wrapper {
+  border-top: 1px solid #596237;
+  background: #B6C684;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B6C684), to(#9EAA75));
+  background: -moz-linear-gradient(top, #B6C684, #9EAA75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #FFFFFF;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: block; 
+}
+
+tr.even td.forum-list-icon-default .forum-list-icon-wrapper span, 
+tr.odd td.forum-list-icon-default .forum-list-icon-wrapper span,
+.forum-list-icon-legend .forum-list-icon-default {
+  background: transparent url(images/forum_list_default.png) no-repeat center center;
+}
+
+tr.even td.forum-list-icon-new-posts .forum-list-icon-wrapper span, 
+tr.odd td.forum-list-icon-new-posts .forum-list-icon-wrapper span,
+.forum-list-icon-legend .forum-list-icon-new-posts {
+  background: transparent url(images/forum_list_new_posts.png) no-repeat center center;
+}
+
+/* TOPIC LIST ICONS *********************************************************/
+span.topic-icon {
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+}
+
+.topic-icon-default {
+  background: transparent url(images/topic_list_default.png) no-repeat center center;
+}
+
+.topic-icon-new {
+  background: transparent url(images/topic_list_new.png) no-repeat center center;
+}
+
+.topic-icon-hot {
+  background: transparent url(images/topic_list_hot.png) no-repeat center center;
+}
+
+.topic-icon-hot-new {
+  background: transparent url(images/topic_list_hot_new.png) no-repeat center center;
+}
+
+.topic-icon-sticky {
+  background: transparent url(images/topic_list_sticky.png) no-repeat center center;
+}
+
+.topic-icon-closed {
+  background: transparent url(images/topic_list_closed.png) no-repeat center center;
+}
+
+/* TOPIC LIST ICON LEGEND ***************************************************/
+.topic-icon-default {
+  background: transparent url(images/topic_list_default.png) no-repeat top left;
+}
+
+.topic-icon-new {
+  background: transparent url(images/topic_list_new.png) no-repeat top left;
+}
+
+.topic-icon-hot {
+  background: transparent url(images/topic_list_hot.png) no-repeat top left;
+}
+
+.topic-icon-hot-new {
+  background: transparent url(images/topic_list_hot_new.png) no-repeat top left;
+}
+
+.topic-icon-sticky {
+  background: transparent url(images/topic_list_sticky.png) no-repeat top left;
+}
+
+.topic-icon-closed {
+  background: transparent url(images/topic_list_closed.png) no-repeat top left;
+}
+
+/* BUTTONIZED LINKS - GENERAL ***********************************************/
+/* Based on http://css-tricks.com/examples/ButtonMaker */
+
+a.af-button-large,
+a.af-button-large:link, 
+a.af-button-large:visited,
+a.af-button-small,
+a.af-button-small:link, 
+a.af-button-small:visited,
+a.author-pane-link,
+a.author-pane-link:link,
+a.author-pane-link:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.af-button-large,
+.af-button-small,
+.author-pane-link {
+  display: block;
+  border-top: 1px solid #596237;
+  background: #B6C684;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B6C684), to(#9EAA75));
+  background: -moz-linear-gradient(top, #B6C684, #9EAA75);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #333333;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+a.af-button-large:hover,
+a.af-button-small:hover,
+a.author-pane-link:hover {
+  background: #B6C684;
+  color: #333333;
+  border-top-color: #EFEFEF;
+}
+
+a.af-button-large:active,
+a.af-button-small:active,
+a.author-pane-link:active {
+  background: #B6C684;
+  color: #333333;
+  border-top-color: #EFEFEF;
+}
+
+.af-button-large span {
+  font-size: 14px;
+  padding: 2px 2px 2px 25px; /* Last number controls width for image */
+  line-height: 30px; /* Approximate height of button */
+  margin: 0 7px 0 7px; /* Left and right space outside text & image */
+}
+
+.af-button-small span {
+  font-size: 12px;
+  padding: 2px 2px 2px 20px; /* Last number controls width for image */
+  line-height: 25px; /* Approximate height of button */
+  margin: 0 7px 0 7px; /* Left and right space outside text & image */
+}
+
+.author-pane-link span {
+  font-size: 12px;
+  padding: 0 0 0 22px; /* Last number controls width for image */
+  line-height: 22px; /* Approximate height of button */
+  margin: 0 7px 0 7px; /* Left and right space outside text & image */
+}
+
+/* BUTTONIZED LINKS - INDIVIDUAL BUTTONS ************************************/
+
+.forum-add-forum .af-button-large span {
+  background: url(images/add_topic.png) no-repeat;
+}
+
+.forum-add-poll .af-button-large span {
+  background: url(images/add_poll.png) no-repeat;
+}
+
+/*** Reply/Locked at the top and bottom of individual topics. ***/
+
+/* Reply link */
+.topic-reply-allowed .af-button-large span {
+  background: url(images/topic_reply.png) no-repeat;
+}
+
+/* Locked topic (not a link so an extra span is used instead of the "a". */
+.topic-reply-locked .af-button-large span {
+  background: url(images/topic_locked.png) no-repeat;
+}
+
+/* Last post */
+.last-post-link .af-button-large span {
+  background: url(images/topic_last_post.png) no-repeat;
+}
+
+/* First unread */
+.topic-new-post-link .af-button-large span {
+  background: url(images/topic_first_unread_post.png) no-repeat;
+}
+
+
+/*** Links on the individual posts (nodes and comments). ***/
+
+/* General */
+.forum-post-links .af-button-small span {
+}
+
+/* Reply */
+.comment_add .af-button-small span,
+.comment_reply .af-button-small span {
+  background: url(images/post_reply.png) no-repeat;
+}
+
+/* Quote */
+.quote .af-button-small span {
+  background: url(images/post_quote.png) no-repeat;
+}
+
+/* Edit */
+.comment_edit .af-button-small span,
+.post_edit .af-button-small span {
+  background: url(images/post_edit.png) no-repeat;
+}
+
+/* Delete */
+.comment_delete .af-button-small span,
+.post_delete .af-button-small span {
+  background: url(images/post_delete.png) no-repeat;
+}
+
+/* Jump to top */
+.forum-jump-links .af-button-small span {
+  background: url(images/topic_top.png) no-repeat;
+}
+
+/*** AUTHOR PANE ***/
+
+.forum-post-panel-sub .author-contact .author-pane-link span {
+  background: transparent url(images/ap_email.png) no-repeat;
+}
+
+.forum-post-panel-sub .author-privatemsg .author-pane-link span {
+  background: transparent url(images/ap_private_message.png) no-repeat;
+}
+
+.forum-post-panel-sub .author-relationship-add-icon.author-pane-link span {
+  background: transparent url(images/ap_contact_add.png) no-repeat;
+}
+
+.forum-post-panel-sub .author-relationship-remove-icon.author-pane-link {
+  background: transparent url(images/ap_contact_remove.png) no-repeat;
+}
+
+
+/*
+This file contains colors, graphics, and text effects. For structural markup,
+see advanced_forum-structure.css.
+*/
+
+/*** PAGER *******************************************************************/
+
+/* This is the pager on the topics in the list */
+.topic-pager {
+  font-style: italic;
+}
+
+/* Other pagers in the forum */
+.forum-pager .pager a,
+#forum-comments .pager a {
+  font-weight: bold;
+}
+
+.forum-pager .pager a:link,
+.forum-pager .pager a:visited,
+#forum-comments .pager a:link,
+#forum-comments .pager a:visited {
+  text-decoration: none;
+  border: 1px solid #B6C684;
+  background: #F5FFD3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CFE096), to(#F5FFD3));
+  background: -moz-linear-gradient(top, #CFE096, #F5FFD3);
+  font-weight: bold;
+}
+
+.forum-pager .pager-current,
+.forum-pager .pager a:hover,
+#forum-comments .pager-current,
+#forum-comments .pager a:hover {
+  color: #0062A0; 
+}
+
+.forum-pager .pager a.active,
+#forum-comments .pager a.active {
+  background: #F5FFD3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CFE096), to(#F5FFD3));
+  background: -moz-linear-gradient(top, #CFE096, #F5FFD3);
+  color: #0062A0; 
+}
+
+/*** FORUM & TOPIC LIST ******************************************************/
+
+/* Forum list and topic list tables */
+.forum-table {
+  border: 1px solid #B6C684;
+}
+
+/* Table name and description on forum list and table header on topic list */
+.forum-table-wrap .forum-table-superheader,
+.forum-table-topics thead tr  {
+  border-top: 1px solid #B6C684;
+  background: #B6C684;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B6C684), to(#9EAA75));
+  background: -moz-linear-gradient(top, #B6C684, #9EAA75);
+  color: #F5FFD3;;
+}
+
+/* Table name on forum list */
+.forum-table-superheader .forum-table-name,
+.forum-table-superheader .forum-table-name a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Table header on forum list */
+.forum-table-wrap thead tr {
+  background-color: #F5F5F5;
+  border: 1px solid #B6C684;
+}
+
+/* Table header on forum list and topic list */
+.forum-table thead tr a,
+.forum-table thead tr a:visited,
+.forum-table thead tr a:link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Reset to avoid bleed-thru from theme */
+.forum-table thead th {
+  border-bottom: none;
+}
+
+/* Rows on both tables */
+.forum-table tr.even, 
+.forum-table tr.odd {
+  border: none; /* reset */
+  border-top: 1px solid #FFFFFF;
+  background: #F5FFD3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CFE096), to(#F5FFD3));
+  background: -moz-linear-gradient(top, #CFE096, #F5FFD3);
+}
+
+/* Active column on both tables - reset to prevent bleed thru from theme */
+.forum-table tr.even td.active,
+.forum-table tr.odd td.active{
+  background-color: transparent;
+}
+
+/* Individual cells on both tables */
+.forum-table td {
+  border: none;
+}
+
+/* Placeholder when there are no topics in the list */
+.view-advanced-forum-topic-list .view-empty {
+  border: 3px solid #B6C684;
+}
+
+/*** Sticky topics ***/
+.forum-table tr.sticky {
+  background-color: #E6EDEC;
+}
+
+.forum-table tr.forum-last-sticky {
+  border-bottom: 10px solid #B6C684;
+}
+
+.forum-table .sticky-label {
+  font-weight: bold;
+}
+
+/*** FORUM STATISTICS *******************************************************/
+
+#forum-statistics {
+  border: 1px solid #B6C684;
+}
+
+#forum-statistics-header {
+  border-top: 1px solid #B6C684;
+  background: #B6C684;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B6C684), to(#9EAA75));
+  background: -moz-linear-gradient(top, #B6C684, #9EAA75);
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 1px solid #B6C684;
+}
+
+#forum-statistics-active-header {
+  display: none;
+}
+
+#forum-statistics-active-body {
+  display: none;
+}
+
+#forum-statistics-latest-users {
+  display: none;
+}
+
+.forum-statistics-sub-header {
+  background-color: #CFE096;
+  font-weight: bold;
+}
+
+.forum-statistics-sub-body {
+  background-color: #F5F5F5;
+}
+
+
+/*** FORUM TOPICS **********************************************************/
+
+.forum-post {
+  border: 2px solid #B6C684;
+}
+
+/* Header at the top of each post */
+.forum-post-info {
+  border-top: 1px solid #B6C684;
+  background: #B6C684;
+  background: -webkit-gradient(linear, left top, left bottom, from(#B6C684), to(#9EAA75));
+  background: -moz-linear-gradient(top, #B6C684, #9EAA75);
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 1px solid #B6C684;
+}
+
+.forum-posted-on {
+  font-weight: bold;
+}
+
+.forum-forum-post .new {
+  color: #ffffff;
+}
+
+.forum-post-number a {
+  color: #ffffff !important;
+}
+
+/* Wrapper around author pane and content */
+.forum-post-wrapper {
+  background-color: #F5FFD3;
+}
+
+/* Author information pane */
+.forum-post-panel-sub .author-pane .author-name {
+  font-weight: bold;
+}
+
+.forum-post-panel-sub .author-pane .picture img {
+  border: 1px solid #B6C684;
+  background-color: #FFFFFF;
+}
+
+.forum-post-panel-sub .author-pane .author-pane-label {
+  font-weight: bold;
+}
+
+/* Post text area */
+.forum-post-panel-main {
+  background-color: #FFFFFF;
+  border-left: 1px solid #B6C684;
+}
+
+.forum-post-title {
+  font-weight: bold;
+  border-bottom: 1px solid #B6C684;
+}
+
+.forum-post-content {
+  overflow: hidden;
+}
+
+/* Post footer */
+.forum-post-footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #B6C684;
+}
+
+/* Box under top post before first reply */
+.forum-top-post-footer {
+/*  border: 2px solid #B6C684;
+  background: #F5FFD3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CFE096), to(#F5FFD3));
+  background: -moz-linear-gradient(top, #CFE096, #F5FFD3); */
+  display: none;
+}
+
+/* Topic navigation */
+.forum-topic-navigation {
+  border: 2px solid #B6C684;
+  background: #F5FFD3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CFE096), to(#F5FFD3));
+  background: -moz-linear-gradient(top, #CFE096, #F5FFD3);
+}
+
+
+

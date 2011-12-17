@@ -1,0 +1,326 @@
+/*Id*/
+
+/*
+ * HMTL elements
+ */
+
+body.mceContentBody {
+  background:#fff;
+  color:#000;
+  font-size:12px;
+}
+
+body.mceContentBody a:link {
+  color:#ff0000;
+}
+
+table {
+  border-collapse: none;
+}
+
+thead th {
+  background-color: #596237;
+  color: #CCCC99;
+  font-size: 0.8em;
+  -webkit-border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 5px;
+  border-bottom: 1px solid #CCCCCC;
+/*  border-right: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;*/
+}
+
+td {
+  font-size: 0.8em;
+  border: 1px solid #AAAAAA;
+/*  background-color: #FEFFC8; */
+  padding: 5px;
+}
+
+/*
+ * IDs
+ */
+ 
+  #block-block-4 /* "User login form" block */
+  {
+    margin: 1em 0;
+    padding: 6px; 
+    width: 240px;
+    background-color: #B6C684;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;  
+  }
+  #block-block-4 div.content
+  {
+    margin: 0 60px;
+    width: 20em;
+  }
+  #block-block-4 ul li 
+  {
+    margin: 1em 0 0 -2em;
+    list-style-type: none;
+    font-size: smaller;
+  }
+
+/*
+ *
+ * "Logged in as" block
+ *
+ */
+  #block-logged_in-0 {
+    color: #CCCC99;
+	background-color: #7A864B;
+	padding: 6px 6px 6px 10px;
+  	width: 7.5em;
+  	margin: 0 0 8px -2px;
+    font-size: small;
+  	display: block;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-to-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  #block-logged_in-0 a {
+    font-style: italic;
+    color: #CCCC99;
+    text-decoration: none;
+  }
+
+  #block-logged_in-0 a:link {
+    border-bottom: 1px solid;
+  }
+
+  #block-logged_in-0 a:visited {
+    border-bottom: 1px solid;
+  }
+
+  #block-logged_in-0 a:hover {
+    border-bottom: 1px dotted;
+  }
+
+  #block-logged_in-0 a:active {
+    border-bottom: 1px dotted;
+  }
+
+/*
+ * Hours Views blocks
+ */
+#block-views-hours_list-block_1 {
+  margin-top: .5em;
+}
+
+#block-views-hours_list-block_1 h2, #block-views-hours_list-block_2 h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*
+ * Members' menu
+ */
+ 
+ #block-menu-menu-members-menu
+ 	{
+ 	width: auto;
+	height: auto;
+	color: #844D18;
+	padding: 8px;
+  }
+  
+  #block-menu-menu-members-menu ul {
+	margin: -11px 0 0 -11px;
+	padding: 0;
+  }
+
+  #block-menu-menu-members-menu li {
+	text-decoration: none;
+	text-align: left;
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0 0 0 -1px;
+  }
+
+  #block-menu-menu-members-menu li.first {
+    margin-top: -3px;
+  }
+  
+  #block-menu-menu-members-menu li a {
+	  background-color: #596237;
+	  padding: 6px 6px 6px 10px;
+	  width: 7.5em;
+/*	border-bottom: 1px solid #CCCC99;*/
+  	display: block;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  #block-menu-menu-members-menu li.first a {
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #block-menu-menu-members-menu li a:link {
+	color: #CCCC99;
+  }
+
+  #block-menu-menu-members-menu li a:visited {
+	color: #CCCC99;
+	text-decoration: none;
+  }
+
+  #block-menu-menu-members-menu li a:hover {
+	color: #663300;
+	background-color: #B6C684;
+	text-decoration: none;
+	margin-left: 3px;
+  }
+
+  #block-menu-menu-members-menu li a:active {
+
+  }
+
+ 
+/*
+ * Classes
+ */
+ 
+.fieldset-wrapper li {
+  margin-left: 2em;
+}
+
+.beige-text {
+  color: #CCCC99;
+}
+
+.calendar-calendar tr {
+  background-color: #DFE0B5;
+}
+
+.calendar-calendar .mini {
+  border: 1px solid #AAAAAA;
+}
+
+.calendar-calendar table.mini td.empty {
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+}
+
+.calendar-date-select {
+  margin-top: -40px;
+}
+
+ul.content-tabs {
+	list-style-type: none;
+	margin: 0 0 0.7em 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+ul.content-tabs li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	text-align: center;
+}
+
+ul.content-tabs li a {
+	font-weight: bold;
+	padding: 0.7em;
+	border-bottom: 1px solid #CCCC99;
+	border-right: 1px solid #CCCC99;
+	background-color: #596237;
+	width: 9em;
+	float: left;	
+}
+
+ul.content-tabs li a:link {
+	color: #CCCC99;
+}
+
+ul.content-tabs li a:visited {
+	color: #CCCC99;
+	text-decoration: none;
+}
+
+ul.content-tabs li a:hover {
+	color: #663300;
+	background-color: #B6C684;
+	text-decoration: none;
+}
+
+ul.content-tabs li a:active {
+
+}
+
+.duty-change {
+  background-color: #FF9933;
+}
+
+.duty-date {
+  background-color: #CCCCCC;
+}
+
+.duty-day {
+  background-color: #FFFFFF;
+}
+
+.duty-table {
+  font-size: small;
+  border-collapse: collapse;
+ /* max-width: 480px;*/
+}
+
+.view-bullseye-calendar .mini td {
+  text-align: center;
+}
+
+.view-bullseye-calendar .mini-day-on {
+  color: #FFFFCC;
+}
+
+.view-bullseye-calendar .mini-day-on a {
+  background-color: #996600;
+  color: #FFFFCC;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.view-bullseye-calendar .mini-day-on a:hover {
+  text-decoration: underline;
+}
+
+.view-bullseye-league-match th, .view-bullseye-shooter-results th {
+  font-size: 0.8em;
+}
+
+.view-bullseye-league-match th a, .view-bullseye-shooter-results th a {
+  color: #CCCC99;
+  border-bottom: 1px dotted;
+}
+
+.view-bullseye-league-match td, .view-bullseye-shooter-results td {
+  font-size: 0.8em;
+}
+
+tr.league-records-title td {
+  background-color: #596237;
+}
+
+.view-photo-gallery table.views-view-grid td {
+  border: none;
+}

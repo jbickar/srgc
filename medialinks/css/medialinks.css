@@ -1,0 +1,167 @@
+/*********************************************************************/
+/*  MediaLinks Style Sheet created by John Foliot - Stanford Online Accessibility Program         
+/*  Released under Creative Commons Attribution-Share Alike 3.0 United States License           
+/*                                                                                                                                    
+/*  Notes: Providing visual cues to users that a link is  to a document (PDF, Word, etc.)            
+/*  provides useful decision-making information.  It addresses certain cognitive disabilities 
+/*  and is a best-practices recommendation.  This style sheet checks for file extensions and
+/*  automatically appends an icon after the link.  For even better accessibility, content authors
+/*  should also indicate via the title attribute that the link is to a certain file type:
+/*      <a href ="pathtofile.pdf" title="Links to a PDF file">PDF File [245 kb]</a> 
+/* 
+/*  Current file extensions supported: PDF, DOC, DOCX, XLS, PPT      
+/*
+/*  There are also times when you wish to signal that a link in your document is to a page
+/*  or site external to your website.  To do that, simply add the following class information
+/*  to your link:
+/*     <a href="pathtoexternallink" class="external">The outside site</a>                                                            
+/*                                                                                                      
+/******************************************************************/
+
+
+/*******************/
+/*  External Link  */
+/*******************/
+a.external {
+	background-image: url(../images/icons/external_gray.gif);;
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+}
+a.external_gray {
+	background-image: url(../images/icons/external_gray.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+}
+a.external:focus, a.external:hover {
+	background-image: url(../images/icons/external.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	color:#830000;
+}
+
+/*********/
+/*  PDF  */
+/*********/
+
+a[href$='.pdf'] {
+	background-image: url(../images/icons/pdf_gray.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	border-bottom: 1px dotted gray;
+}
+
+a[href$='.pdf']:focus, a[href$='.pdf']:hover {
+	background-image: url(../images/icons/pdf.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	color:#830000;
+	border-bottom: 1px dotted #830000;
+}
+
+/*******************/
+/*  Word Document  */
+/*******************/
+a[href$='.doc'] {
+	background-image: url(../images/icons/word_gray.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	border-bottom: 1px dotted gray;	
+}
+
+a[href$='.doc']:focus, a[href$='.doc']:hover {
+	background-image: url(../images/icons/word.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	color:#830000;
+	border-bottom: 1px dotted #830000;
+}
+a[href$='.docx'] {
+	background-image: url(../images/icons/word_gray.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	border-bottom: 1px dotted gray;
+}
+
+a[href$='.docx']:focus, a[href$='.docx']:hover {
+	background-image: url(../images/icons/word.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	color:#830000;
+	border-bottom: 1px dotted #830000;
+}
+
+/***********************/
+/*  Excel Spreadsheet  */
+/***********************/
+a[href$='.xls'] {
+	background-image: url(../images/icons/excel_gray.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	border-bottom: 1px dotted gray;
+}
+
+a[href$='.xls']:focus, a[href$='.xls']:hover {
+	background-image: url(../images/icons/excel.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	color:#830000;
+	border-bottom: 1px dotted #830000;
+}
+
+/*****************************/
+/*  Powerpoint Presentation  */
+/*****************************/
+a[href$='.ppt'] {
+	background-image: url(../images/icons/ppt_gray.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	border-bottom: 1px dotted gray;
+}
+
+a[href$='.ppt']:focus, a[href$='.ppt']:hover {
+	background-image: url(../images/icons/ppt.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+	border:none;
+	line-height:16px;
+	color:#830000;
+	border-bottom: 1px dotted #830000;
+}
+
