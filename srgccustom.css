@@ -321,8 +321,60 @@ td {
   background-color: #7A864B;
 }
 
+.calendar-calendar td .inner div, .calendar-calendar td .inner div a {
+  background-color: #FFFFCC;
+}
+
+/* Edit links on Calendar Views */
+
+.calendar-calendar td .inner div.calendar div.view-data-edit-node {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	text-align: center;
+	font-size: medium;
+}
+
+.calendar-calendar td .inner div.calendar div.view-data-edit-node a {
+	font-weight: bold;
+	padding: 0.6em;
+	border-bottom: 1px solid #CCCC99;
+	border-right: 1px solid #CCCC99;
+	-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+	background-color: #596237;
+	width: 3em;
+	float: left;
+	margin-left: 15px;
+}
+
+.calendar-calendar td .inner div.calendar div.view-data-edit-node a:link {
+	color: #CCCC99;
+}
+
+.calendar-calendar td .inner div.calendar div.view-data-edit-node a:visited {
+	color: #CCCC99;
+	text-decoration: none;
+}
+
+.calendar-calendar td .inner div.calendar div.view-data-edit-node a:hover {
+	color: #663300;
+	background-color: #B6C684;
+	text-decoration: none;
+}
+
+.calendar-calendar td .inner div.calendar div.view-data-edit-node a:active {
+
+}
+
 .calendar-date-select {
   margin-top: -40px;
+}
+
+.calendar-calendar td .inner div.calendar div.view-data-node-data-field-range-duty-member-field-range-duty-member-uid a {
+  font-size: small;
+  font-weight: bold;
 }
 
 div.content-profile-display {
@@ -484,6 +536,15 @@ ul.content-tabs li a:active {
 
 .view-bullseye-league-match td, .view-bullseye-shooter-results td {
   font-size: 0.8em;
+}
+
+
+.content-profile-display ul.tabs {
+	list-style-type: none;
+	margin: 0 0 0.7em 0;
+	padding: 0;
+	float: left;
+	width: 100%;
 }
 
 tr.league-records-title td {
