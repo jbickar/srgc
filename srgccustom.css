@@ -217,6 +217,12 @@ td {
   border: 2px solid #7A864B;
   padding: 0 1em;
   background-color: #7A864B;
+  -webkit-border-top-left-radius: 18px;
+  -webkit-border-top-right-radius: 18px;
+  -moz-border-radius-topleft: 18px;
+  -moz-border-radius-topright: 18px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
   .calendar-calendar ul.links li a {
@@ -227,18 +233,21 @@ td {
 	background-color: #7A864B;
 	color: #B6C684;
 	text-decoration: none;
+    border-bottom: 1px dotted #B6C684;
   }
 
   .calendar-calendar ul.links li a:visited {
 	text-decoration: none;
 	color: #B6C684;
 	background-color: #7A864B;
+    border-bottom: 1px dotted #B6C684;
   }
 
   .calendar-calendar ul.links li a:hover {
-	color: #663300;
-	background-color: #B6C684;
-	text-decoration: none;
+/*	color: #663300;
+	background-color: #B6C684;*/
+	text-decoration: underline;
+    border-bottom: none;
   }
 
   .calendar-calendar ul.links li a:active {
@@ -252,9 +261,31 @@ td {
   border:1px solid #7A864B;
 }
 
-.calendar-calendar div.date-nav a, 
-.calendar-calendar div.date-nav h3 {
+.calendar-calendar div.date-nav a {
+
+}
+
+.calendar-calendar div.date-nav a:link {
   color: #B6C684;
+  border-bottom: 1px dotted #B6C684;
+}
+
+.calendar-calendar div.date-nav a:visited {
+  color: #B6C684;
+  border-bottom: 1px dotted #B6C684;
+}
+
+.calendar-calendar div.date-nav a:hover {
+  color: #B6C684;
+  border-bottom: none;
+}
+
+.calendar-calendar div.date-nav a:active {
+
+}
+
+.calendar-calendar div.date-nav h3 {
+  color: #DFE0B5;
 }
 
 .calendar-calendar tr {

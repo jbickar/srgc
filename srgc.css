@@ -159,7 +159,7 @@
 
   #content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
   {
-    margin-top: 8px;
+    margin: 8px 0;
   }
 
   .breadcrumb /* The path to the current page in the form of a list of links */
