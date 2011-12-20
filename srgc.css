@@ -165,8 +165,14 @@
   .breadcrumb /* The path to the current page in the form of a list of links */
   {
 /*    padding-bottom: 0; /* Undo system.css */
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: small; 
+/*    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; */
+/*    background-color: #B6C684; */
+    border-bottom: 3px solid #B6C684;
+    display: block;
+    font-size: small;
+    margin: -0.6em 0 1em -4.8em;
+    padding: 0.4em 0.4em 0.4em 0.7em;
+    word-spacing: 2px;
   }
 
   h1.title, /* The title of the page */
@@ -488,6 +494,19 @@
   {
   }
 
+  #sidebar-right-inner .block {
+    padding: 0.5em 0.5em 0 0;
+  }
+
+  #sidebar-right-inner .block h2 {
+    border-bottom: 1px solid #7A864B;
+    margin-bottom: 0.5em;
+  }
+
+  #sidebar-right-inner ul {
+    font-size: small;
+  }
+
 /** footer **/
   #footer
   {
@@ -749,6 +768,7 @@
   .block h2.title /* Block title */
   {
     font-family: Arial, sans-serif;
+    font-size: medium;
   }
 
   .block .content /* Block's content wrapper */
@@ -822,7 +842,17 @@
     width: 128px;
   }
   #block-search-0 h2 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+/*    font-family: Georgia, "Times New Roman", Times, serif; */
+  }
+  #block-search-0 label {
+    margin-left: -999px;
+  }
+  #block-search-0 #edit-search-block-form-1 {
+    margin-left: 895px;
+  }
+  
+  #block-search-0 #edit-submit {
+    margin-top: 7px;
   }
   
   #block-statistics-0 /* "Popular content" block */
