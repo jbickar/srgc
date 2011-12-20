@@ -123,9 +123,9 @@
 
         <?php if ($breadcrumb || $title || $tabs || $help || $messages): ?>
           <div id="content-header">
-            <span class="breadcrumb"><?php print $breadcrumb; ?></span>
+            <span class="breadcrumb" role="presentation"><?php print $breadcrumb; ?></span>
             <?php if ($title): ?>
-              <h2 class="title"><?php print $title; ?></h2>
+              <h1 class="title"><?php print $title; ?></h1>
             <?php endif; ?>
             <?php // if (in_array('Site Admin', $user->roles)): ?>
             <?php print $messages; ?>
