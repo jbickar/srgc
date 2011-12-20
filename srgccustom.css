@@ -318,6 +318,68 @@ td {
   margin-top: -40px;
 }
 
+div.content-profile-display {
+  border: none;
+  -webkit-border-radius: 40px 40px 40px 40px;
+  -moz-border-radius: 40px 40px 40px 40px;
+  border-radius: 40px 40px 40px 40px;
+  background-color: #CCCC99;
+}
+
+.content-profile-display .field {
+/*  background-color: #CCCC99; */
+}
+
+.content-profile-display ul.tabs {
+	list-style-type: none;
+	margin: 0 0 0.7em 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+.content-profile-display ul.tabs li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	text-align: center;
+}
+
+.content-profile-display ul.tabs li a {
+	font-weight: bold;
+	padding: 0.6em;
+	border-bottom: 1px solid #CCCC99;
+	border-right: 1px solid #CCCC99;
+	background-color: #596237;
+	width: 7em;
+	float: left;
+	-webkit-border-top-left-radius: 18px;
+    -webkit-border-top-right-radius: 18px;
+    -moz-border-radius-topleft: 18px;
+    -moz-border-radius-topright: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.content-profile-display ul.tabs li a:link {
+	color: #CCCC99;
+}
+
+.content-profile-display ul.tabs li a:visited {
+	color: #CCCC99;
+	text-decoration: none;
+}
+
+.content-profile-display ul.tabs li a:hover {
+	color: #663300;
+	background-color: #B6C684;
+	text-decoration: none;
+}
+
+.content-profile-display ul.tabs li a:active {
+
+}
+
 ul.content-tabs {
 	list-style-type: none;
 	margin: 0 0 0.7em 0;
@@ -378,6 +440,10 @@ ul.content-tabs li a:active {
   font-size: small;
   border-collapse: collapse;
  /* max-width: 480px;*/
+}
+
+.profile .picture {
+  float: none;
 }
 
 .view-bullseye-calendar .mini td {

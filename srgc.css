@@ -185,6 +185,10 @@
   {
     margin: 0;
   }
+  
+  h1.title {
+    margin-bottom: 8px;
+  }
 
   div.messages /* Important messages (status, warning, and error) for the user */
   {
