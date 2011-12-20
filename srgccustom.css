@@ -199,7 +199,17 @@ td {
 
   }
 
- 
+  #front-page-map {
+    display: block;
+    border: 3px solid #919191;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow:8px 8px 8px #919191;
+    -moz-box-shadow:8px 8px 8px #919191;
+    box-shadow:8px 8px 8px #919191;
+  }
+  
 /*
  * Classes
  */
