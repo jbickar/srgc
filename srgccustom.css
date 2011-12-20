@@ -14,6 +14,13 @@ body.mceContentBody a:link {
   color:#ff0000;
 }
 
+fieldset {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 5px solid #CC9;
+}
+
 table {
   border-collapse: none;
 }

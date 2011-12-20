@@ -138,12 +138,14 @@ td, th {
 }
 
 .important {
-	background-color: white;
-	color: red;
-	font-weight: bold;
-	border: 2px dashed red;
-	padding: 5px;
-}
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #F7FF6B;
+    border: 8px solid #FFD26B;
+    color: red;
+    font-weight: bold;
+    padding: 8px;}
 
 .last-updated {
 	font-size: x-small;

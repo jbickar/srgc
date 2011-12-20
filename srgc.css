@@ -511,8 +511,9 @@
     margin-bottom: 0.5em;
   }
 
-  #sidebar-right-inner ul {
+  #sidebar-right-inner {
     font-size: small;
+    padding-right: 5px;
   }
 
 /** footer **/
