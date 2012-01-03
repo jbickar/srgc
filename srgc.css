@@ -644,6 +644,12 @@
 
   .comment /* Wrapper for a single comment */
   {
+    -webkit-border-radius: 40px 40px 40px 40px;
+    -moz-border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #CCCC99;
+    margin: 40px;
+    padding: 20px;
   }
 
   .comment-inner /* Additional wrapper for a single comment */
