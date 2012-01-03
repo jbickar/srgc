@@ -143,6 +143,10 @@
   {
   }
 
+  #content h2 {
+    border-top: 3px dotted #B6C684;
+    padding: 12px 0;
+  }
   #content-inner
   {
     padding-right: 0.8em;
