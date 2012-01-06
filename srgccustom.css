@@ -550,6 +550,9 @@ ul.content-tabs li a:active {
   font-size: 0.8em;
 }
 
+.views-table {
+  white-space: nowrap;
+}
 
 .content-profile-display ul.tabs {
 	list-style-type: none;
