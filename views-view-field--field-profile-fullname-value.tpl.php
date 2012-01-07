@@ -25,7 +25,7 @@ global $user;
 if (!in_array('authenticated user', $user->roles)) {
   $output = preg_split('/\s/', $output);
   $count = count($output) - 1;
-  $output[$count] = substr($output[$count], 0, 1) .'.';
+  $output[$count] = substr($output[$count], 0, 2) .'.';
   $output = implode(' ', $output);
 }
 

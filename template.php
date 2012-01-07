@@ -119,7 +119,7 @@ function srgc_preprocess_page(&$vars, $hook) {
     $title_orig = $vars['title'];
     $title = preg_split('/\s/', $title_orig);
     $count = count($title) - 1;
-    $title[$count] = substr($title[$count], 0, 1) .'.';
+    $title[$count] = substr($title[$count], 0, 2) .'.';
     $title = implode(' ', $title);
     $vars['title'] = t($title);
     $vars['head_title'] = t($title) ." | ". t('Sunnyvale Rod and Gun Club');
@@ -186,7 +186,7 @@ function srgc_breadcrumb($breadcrumb) {
     if ((!in_array('authenticated user', $user->roles)) && (preg_match('/Bullseye League Results for/', $title) >= 1)) {
       $title = preg_split('/\s/', $title);
       $count = count($title) - 1;
-      $title[$count] = substr($title[$count], 0, 1) .'.';
+      $title[$count] = substr($title[$count], 0, 2) .'.';
       $title = implode(' ', $title);
     }
     if($path[1]) {
