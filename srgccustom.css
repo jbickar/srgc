@@ -551,7 +551,8 @@ ul.content-tabs li a:active {
 }
 
 .views-table {
-  white-space: nowrap;
+/*  Need a better implementation - this makes table bleed into right sidebar
+   white-space: nowrap;*/
 }
 
 .content-profile-display ul.tabs {
