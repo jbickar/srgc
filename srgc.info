@@ -1,0 +1,5 @@
+name = Sunnyvale Rod and Gun Club 
+base theme = open_framework
+description = Custom theme for the Sunnyvale Rod and Gun Club website
+core = 7.x
+version = 7.x-1.x-dev
