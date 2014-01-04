@@ -1,6 +1,13 @@
 /* -- Body -- */
-body {background-color: #FFFFCC;}
+body {
+  background-color: #FFFFCC;
+}
 
 /* -- Links --*/
-a {color: #996600}
-a:hover {color: #663300; text-decoration: underline;}
+a, .more-link a, a.more-link {
+  color: #996600
+}
+a:hover, .more-link a:hover, a.more-link:hover {
+  color: #663300;
+  text-decoration: underline;
+}
