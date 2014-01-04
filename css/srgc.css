@@ -1,2 +1,6 @@
 /* -- Body -- */
 body {background-color: #FFFFCC;}
+
+/* -- Links --*/
+a {color: #996600}
+a:hover {color: #663300; text-decoration: underline;}
