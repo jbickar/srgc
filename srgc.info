@@ -4,6 +4,8 @@ description = Custom theme for the Sunnyvale Rod and Gun Club website
 core = 7.x
 version = 7.x-1.x-dev
 
+stylesheets[all][] = css/srgc.css
+
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
 regions[global_header] = Site: Global Header
 regions[header] = Header
