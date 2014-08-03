@@ -1,0 +1,99 @@
+body {
+  background-color: #FFFFCC;
+  color: #663300;
+}
+
+#global-header, #global-footer {
+  background-color: #596237;
+}
+
+#header #logo {
+  border: none;
+}
+
+#name-and-slogan {
+  color: #596237;
+  vertical-align: middle;
+}
+
+.two-lines #site-name {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #663300;
+}
+
+a:link {
+  color: #996600;
+  border-bottom: 1px dotted #996600;
+}
+
+a:hover {
+  color: #996600;
+  border-bottom: 1px solid #996600;
+}
+
+.menu li a:link { 
+  border-bottom: none;
+}
+
+.menu li a:hover {
+  border-bottom: none;
+}
+
+.more-link a, a.more-link {
+  background-image: none;
+}
+
+.more-link a::after, a.more-link::after {
+  content:" >>";
+}
+
+#main ul.nav > li > a {
+  color: #663300;
+}
+#site-name a:link, h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
+  border-bottom: none;
+}
+
+#site-name a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  border-bottom: none;
+}
+
+#site-slogan {
+  font-style: italic;
+}
+
+/* ----- Main Navigation ------------- */
+.navbar .nav > li > a {
+  color: #663300;
+}
+.navbar .nav > .active > a:focus, .navbar .nav > .active-trail > a:focus {
+  color: #663300;
+}
+.navbar .nav > li > a:hover, .navbar .nav > li > a:active {
+  color: #663300;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #663300;
+}
+.navbar .nav > li > ul.dropdown-menu > li > a {color: #663300;}
+.navbar .nav > li > ul.dropdown-menu > li > a:hover {background-color: #f2f1eb; color: #663300;}
+.navbar .nav > .active > a, .navbar .nav > .active-trail > a, .navbar .nav > .active > a:hover, .navbar .nav > .active-trail > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > .active-trail > a:focus {
+  color: #663300;
+}
+
+@media (max-width: 767px) {	
+  /* Main Menu */
+  .nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover, .navbar .nav > li > ul.dropdown-menu > li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
+    color: #663300;
+  }
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: #663300;
+  }
+  .btn.btn-navbar {background: none repeat scroll 0 0 #663300;}
+  .btn.btn-navbar:hover {background-color:#585754;}
+}
+

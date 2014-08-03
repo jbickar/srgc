@@ -1,10 +1,11 @@
 name = Sunnyvale Rod and Gun Club 
-base theme = open_framework
+base theme = stanford_framework 
 description = Custom theme for the Sunnyvale Rod and Gun Club website
 core = 7.x
 version = 7.x-1.x-dev
 
-stylesheets[all][] = css/srgc.css
+; stylesheets[all][] = css/srgc.css
+stylesheets[all][] = css/2014.css
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
 regions[global_header] = Site: Global Header
