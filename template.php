@@ -122,7 +122,7 @@ function srgc_preprocess_page(&$vars, $hook) {
     $title[$count] = substr($title[$count], 0, 2) .'.';
     $title = implode(' ', $title);
     $vars['title'] = t($title);
-    $vars['head_title'] = t($title) ." | ". t('Sunnyvale Rod and Gun Club');
+    $vars['head_title'] = t($title) ." | ". t('Bullseye Pistol League in an anonymous location and apparently not affiliated with any gun club');
   }
 
 //  $vars['sample_variable'] = t('Lorem ipsum.');

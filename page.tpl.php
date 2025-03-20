@@ -102,7 +102,7 @@
 
     <div id="header"><div id="header-inner" class="clear-block">
 
-      <div id="site-name"><a href="/">Sunnyvale Rod &amp; gun Club</a></div>
+      <div id="site-name"><a href="/">Bullseye Pistol League in an anonymous location and apparently not affiliated with any gun club</a></div>
 
       <?php if ($header): ?>
         <div id="header-blocks" class="region region-header">
